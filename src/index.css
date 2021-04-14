@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(235, 243, 245);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.card {
+  width: 100%;
+  background-color: rgb(158, 223, 235);
+  margin-bottom: 3rem;
+  box-shadow: 1px 1px 30px rgba(158, 224, 235, 0.589);
+  border-radius: 10px;
+  position: relative;
+  width: 450px;
+  height: 280px;
+  color: rgb(39, 39, 39);
+}
+
+.card_details {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.card_data {
+  flex: 1;
+}
+
+.card_details > img {
+  width: 6rem;
+  flex: 0;
+}
+
+.card_details * p {
+  font-size: 1.4rem;
+  margin-bottom: 0.1em;
+}
+.card_details * span {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.card_elements {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 2em;
+}
+
+.exp_date {
+  text-align: right;
+}
+
+.chip {
+  height: 3rem;
+}
+
+.list_cards {
+  margin: auto;
+}
+
+.list_desc {
+  padding: 3rem;
+  margin: auto;
+  text-align: center;
+}
+
+.list_desc > * {
+  margin-bottom: 1rem;
+}
+
+form {
+  padding-bottom: 3rem;
+  width: 450px;
+}
+
+form > div {
+  margin-bottom: 1rem;
+}
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+input {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  background-color: rgb(158, 223, 235);
+  font-size: 1rem;
+}
+
+button[disabled] {
+  cursor: not-allowed;
+}
